@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:myapp/features/splash/presentation/widgets/info_widget.dart';
+import 'package:myapp/features/todo/presentation/widgets/info_widget.dart';
 import 'package:myapp/features/todo/data/models/todo_model.dart';
 import '../../../../core/di/injectioin_container.dart' as di;
 import '../bloc/todo/todo_bloc.dart';

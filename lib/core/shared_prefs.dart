@@ -10,7 +10,6 @@ class SharedPrefs {
   factory SharedPrefs() => _instance;
 
   final String themeKey = 'theme';
-  final String firstTimeKey = 'firstTime';
 
   late final SharedPreferences _prefs;
 
@@ -41,16 +40,4 @@ class SharedPrefs {
   }
 
   void removeTheme() => _prefs.remove(themeKey);
-
-  // First Time ===========
-
-  Future<void> setFirstTime(bool firstTime) async {
-    await _prefs.setBool(firstTimeKey, firstTime);
-  }
-
-  bool get getFirstTime {
-    return _prefs.getBool(firstTimeKey) ?? true;
-  }
-
-  void removeFirstTime() => _prefs.remove(firstTimeKey);
 }
